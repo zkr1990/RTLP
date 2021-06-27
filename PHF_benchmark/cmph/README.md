@@ -17,4 +17,3 @@ To use CHD_PH as phf algorithm:
 
 Above commands will test the input files in FOLDER_PATH, and provide the time and space result.
 
-Refer to the README_mega.md about how to generate input files.

@@ -14,6 +14,9 @@ SPHF is PHF designed for satellite applications.
 ## SPHF-RTLP
 SPHF-RTLP is PHF optimized according to hardware features, mainly for input key sets with size smaller than 10000.
 
+# Dependancy
+Ubuntu 18.04, g++, python3, cmake
+
 # Input data generation
 Input_data folder contains inputs used for generating PHF/MPHF functions and test the correctness of those functions.
 
