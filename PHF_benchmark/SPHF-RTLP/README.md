@@ -10,11 +10,12 @@ The option for r and m is power of 2. f() is eliminated and g() is modified with
 Refer to the original paper for more information.
 
 # compile, use g++
+```
 cmake ..
 make
-
+```
 # Check whether all files can be mapped without conflict by SPHF
-./CheckHash FOLDER_PATH/
+`./CheckHash FOLDER_PATH/`
 
 # Citation
 The current work is only available to 17th CoNEXT conference, 2021.

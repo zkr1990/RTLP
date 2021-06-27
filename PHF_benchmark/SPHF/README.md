@@ -4,11 +4,12 @@ It is designed to handle small scale datasets. The space cost of function is aro
 The query step is friendly to be optimized according to hardware constraints.
 
 # compile, use g++
+```
 cmake ..
 make
-
+```
 # Check whether all files can be mapped without conflict by SPHF
-./CheckHash FOLDER_PATH/
+`./CheckHash FOLDER_PATH/`
 
 # Citation
 The current work is only available to 17th CoNEXT conference, 2021.

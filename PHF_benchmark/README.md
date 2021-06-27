@@ -1,23 +1,23 @@
 # PHF benchmark
 This is the benchmark code for PHF/MPHF algorithms. BBHash, cmph and SPHF are compared in terms of constructing time and theoretical storage cost.
 
-# bbhash
+## bbhash
 BBHash algorithm is MPHF generator mainly designed for massive key sets.
 
-# cmph
+## cmph
 cmph is a PHF/MPHF library with multiple different algorithms.
 
-# SPHF
+## SPHF
 SPHF is PHF designed for satellite applications.
 
-# SPHF-RTLP
+## SPHF-RTLP
 SPHF-RTLP is PHF optimized according to hardware features, mainly for input key sets with size smaller than 10000.
 
 All algorithms need compile first in each folder. Please refer to different README.md in each subfolder.
 # Input data generation
 Input_data folder contains inputs used for generating PHF/MPHF functions and test the correctness of those functions.
 Run:
-python3 generate_test_data.py 
+`python3 generate_test_data.py`
 to generate 1000 input files(mark as 1000 different folders). Example includes 0,1,2 folders.
 By default, the size of input key set is 10000, please set n in line 16 accordingly.
 
@@ -33,10 +33,19 @@ SPHF: The storage is estimated with consideration of D[].
 
 # RTLP Result (10000 32 bit input IPs)
 The analysis is similar to PHF results.
-RTLP for these algorithms needs an output array with size m*2bit.
+RTLP for these algorithms needs an output array with size m*2bit (I[]).
 For construction time, an Epsilon time is added.
 For storage cost, m*2bit is added.
 For function space, m*2bit is added.
+
+Method       |AVG time(ms)	|MAX time(ms)	|Storage(Kb)	|Function Space(Kb)
+-------------|------------------|:-------------:|:-------------:|:---------:
+BDZ-PH-RTL   |3.73+e	        |6.85+e		|3457		|39.6
+CHD-PH-RTL   |2.69+e	        |4.79+e		|957		|30
+BBHash-RTL   |7.64+e	        |28.62+e	|352		|39.2
+SPHF-RTL     |3.05+e	        |5.96+e		|538		|50
+RHF1	     |3.34	        |6.31		|421		|43
+RHF2	     |268.65	        |1865.24	|405		|29
 
 # Citation
 The current work is for 17th CoNEXT conference, 2021.

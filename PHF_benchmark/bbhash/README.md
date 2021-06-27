@@ -30,10 +30,10 @@ A. Limasset, G. Rizk, R. Chikhi, P. Peterlongo, _Fast and Scalable Minimal Perfe
 # Modification
 The BBHash source code is copied here without any modification.
 Use testTime.cpp as the default benchmark program for input as a folder.
-
+```
 make
 ./testTime FOLDER_PATH/
-
+```
 Above commands will test the input files in FOLDER_PATH, and provide the time and space result.
 
 Refer to the README_mega.md about how to generate input files.
